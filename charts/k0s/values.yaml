@@ -74,7 +74,7 @@ sync:
 # Syncer configuration
 syncer:
   # Image to use for the syncer
-  # image: loftsh/vcluster
+  image: loftsh/vcluster
   extraArgs: []
   env: []
   livenessProbe:
@@ -95,7 +95,7 @@ syncer:
 # Virtual Cluster (k0s) configuration
 vcluster:
   # Image to use for the virtual cluster
-  image: k0sproject/k0s:v1.23.3-k0s.0
+  image: k0sproject/k0s:v1.22.6-k0s.0
   command:
     - k0s
   baseArgs:
